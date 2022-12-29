@@ -1,0 +1,41 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+@font-face{font-family:Cabin-Regular;src:url(../fonts/Cabin-Regular.ttf.woff) format('woff'),url(../fonts/Cabin-Regular.ttf.svg#Cabin-Regular) format('svg'),url(../fonts/Cabin-Regular.ttf.eot),url(../fonts/Cabin-Regular.ttf.eot?#iefix) format('embedded-opentype');font-weight:400;font-style:normal}
+@font-face{font-family:Inter;src:url(../fonts/Inter.ttf.woff) format('woff'),url(../fonts/Inter.ttf.svg#Inter) format('svg'),url(../fonts/Inter.ttf.eot),url(../fonts/Inter.ttf.eot?#iefix) format('embedded-opentype');font-weight:400;font-style:normal}
+@font-face{font-family:OptimusPrinceps;src:url(../fonts/OptimusPrinceps.ttf.woff) format('woff'),url(../fonts/OptimusPrinceps.ttf.svg#OptimusPrinceps) format('svg'),url(../fonts/OptimusPrinceps.ttf.eot),url(../fonts/OptimusPrinceps.ttf.eot?#iefix) format('embedded-opentype');font-weight:400;font-style:normal}
+@font-face{font-family:Montserrat-Regular;src:url(../fonts/Montserrat-Regular.ttf.woff) format('woff'),url(../fonts/Montserrat-Regular.ttf.svg#Montserrat-Regular) format('svg'),url(../fonts/Montserrat-Regular.ttf.eot),url(../fonts/Montserrat-Regular.ttf.eot?#iefix) format('embedded-opentype');font-weight:400;font-style:normal}
+@font-face{font-family:YesevaOne;src:url(../fonts/YesevaOne.ttf.woff) format('woff'),url(../fonts/YesevaOne.ttf.svg#YesevaOne) format('svg'),url(../fonts/YesevaOne.ttf.eot),url(../fonts/YesevaOne.ttf.eot?#iefix) format('embedded-opentype');font-weight:400;font-style:normal}
+
+
+.top-header{padding:13px 0px;background:#181718;min-height: 56px;}
+.top-header ul.nav li{margin-right: 28px;position: relative;}
+.top-header ul.nav li a{font:400 normal 14px/30px Cabin-Regular;text-decoration: none;letter-spacing: 0.2px; }
+.top-header ul.nav li::after{position:absolute;content:" ";width:0px;height:21px;border:0.5px solid rgba(255,255,255,.3);transform:translateY(-50%);top: 50%;right: -12px;}
+.top-header ul.nav li:last-of-type::after{position:absolute;content:" ";width:0px;height:0px;border:0px solid rgba(255,255,255,.3);}
+.top-header ul.nav li a:hover{text-decoration: underline;}
+.btn.btn-lang{border:1px solid #fff;border-radius:4px;padding: 7px 8px; font:400 normal 12px/15px Inter;color: #FFF;}
+.btn.btn-lang.dropdown-toggle::after{background:url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.99961 11.2313C8.89961 11.2313 8.80286 11.2125 8.70936 11.175C8.61536 11.1375 8.53711 11.0875 8.47461 11.025L5.02461 7.57501C4.88711 7.43751 4.81836 7.26251 4.81836 7.05001C4.81836 6.83751 4.88711 6.66251 5.02461 6.52501C5.16211 6.38751 5.33711 6.31876 5.54961 6.31876C5.76211 6.31876 5.93711 6.38751 6.07461 6.52501L8.99961 9.45001L11.9246 6.52501C12.0621 6.38751 12.2371 6.31876 12.4496 6.31876C12.6621 6.31876 12.8371 6.38751 12.9746 6.52501C13.1121 6.66251 13.1809 6.83751 13.1809 7.05001C13.1809 7.26251 13.1121 7.43751 12.9746 7.57501L9.52461 11.025C9.44961 11.1 9.36836 11.153 9.28086 11.184C9.19336 11.2155 9.09961 11.2313 8.99961 11.2313Z' fill='white'/%3E%3C/svg%3E");width:18px;height:18px;border:0;vertical-align:middle}
+
+.main-header{background: rgba(0, 0, 0, 0.2);}
+.main-header ul.navbar-nav{gap: 32px;}
+.main-header ul.navbar-nav .nav-item .nav-link{color:#fff;font:400 normal 16px/19px Cabin-Regular;text-decoration: none;letter-spacing: 0.2px;padding: 0px;}
+.desivibe-slider .carousel-control-prev-icon {width:47px;height:47px;background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.3' x='0.5' y='0.5' width='46' height='46' rx='4.5' fill='white' stroke='%23242024'/%3E%3Cg opacity='0.6' clip-path='url(%23clip0_265_16)'%3E%3Cpath d='M27.6941 16.8302C27.89 17.0416 28 17.3284 28 17.6275C28 17.9265 27.89 18.2133 27.6941 18.4247L22.5221 24.0068L27.6941 29.5889C27.8844 29.8016 27.9897 30.0864 27.9873 30.3821C27.985 30.6778 27.8751 30.9606 27.6814 31.1697C27.4876 31.3788 27.2256 31.4974 26.9516 31.5C26.6777 31.5025 26.4137 31.3889 26.2167 31.1834L20.3059 24.8041C20.11 24.5926 20 24.3058 20 24.0068C20 23.7078 20.11 23.421 20.3059 23.2095L26.2167 16.8302C26.4126 16.6188 26.6783 16.5 26.9554 16.5C27.2324 16.5 27.4981 16.6188 27.6941 16.8302Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_265_16'%3E%3Crect width='24' height='24' fill='white' transform='translate(12 12)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");}
+.desivibe-slider .carousel-control-next-icon {width:47px;height:47px;background-image:url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.3' x='0.5' y='0.5' width='46' height='46' rx='4.5' fill='white' stroke='%23242024'/%3E%3Cg clip-path='url(%23clip0_265_13)'%3E%3Cpath d='M20.3059 16.8302C20.11 17.0416 20 17.3284 20 17.6275C20 17.9265 20.11 18.2133 20.3059 18.4247L25.4779 24.0068L20.3059 29.5889C20.1156 29.8016 20.0103 30.0864 20.0127 30.3821C20.015 30.6778 20.1249 30.9606 20.3186 31.1697C20.5124 31.3788 20.7744 31.4974 21.0484 31.5C21.3223 31.5025 21.5863 31.3889 21.7833 31.1834L27.6941 24.8041C27.89 24.5926 28 24.3058 28 24.0068C28 23.7078 27.89 23.421 27.6941 23.2095L21.7833 16.8302C21.5874 16.6188 21.3217 16.5 21.0446 16.5C20.7676 16.5 20.5019 16.6188 20.3059 16.8302Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_265_13'%3E%3Crect width='24' height='24' fill='white' transform='translate(12 12)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+.desivibe-slider .carousel-indicators{margin-bottom: 1.5rem;}
+.desivibe-slider .carousel-indicators [data-bs-target]{width: 6px;height:6px;border-radius: 50%;opacity: 1;border: 0px;}
+.desivibe-slider .carousel-indicators .active {opacity: 1;background: linear-gradient(90deg, #EC243E 0%, #A814A6 100%);}
+.desivibe-slider .carousel-caption{position:absolute;right:auto;top:50%;left:50%;padding-top:0;padding-bottom:0;transform:translate(-50%,-50%);bottom:auto}
+.desivibe-slider .carousel-caption h1{font:500 normal 80px/100px OptimusPrinceps;color: #fff;}
+.desivibe-slider .carousel-caption a.btn-desivibe{font:18px/24px Montserrat-Regular;color: #fff;background: linear-gradient(90deg, #EC243E 0%, #A814A6 100%);border-radius: 4px;padding: 16px 24px;text-transform: uppercase;}
+
+.heading-txt{font:400 normal 40px/46px YesevaOne;background: url(../images/heading-bottom.png)no-repeat center 60px;padding-bottom: 70px;margin-bottom: 0px;}
+
+/*--- WHY US SECTION ---*/
+.why-us{background: #0E0E0E url('../images/pattern.png')no-repeat top 50px right 12px;padding-top: 100px;}
+.why-us p{font:16px/26px Montserrat-Regular;}
+
+.our-story{background: #0E0E0E url('../images/pattern-1.png')no-repeat top 60px left 40px;padding-top: 80px;}
+.our-story p{font:16px/26px Montserrat-Regular;}
+
+.menu-sec{background:url('../images/pattern-2.png') top 100px left 40px no-repeat, url('../images/pattern-1.png') top 460px right no-repeat;padding-top:100px;background-color: #0E0E0E;}
+.menu-sec p{font:16px/26px Montserrat-Regular;}
